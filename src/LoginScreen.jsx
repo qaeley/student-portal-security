@@ -54,7 +54,15 @@ export default function LoginScreen() {
   }
 
   return (
-    <main style={{ padding: '2rem', fontFamily: 'sans-serif' }}>
+    <main style={{ 
+      maxWidth: '400px', 
+      margin: '4rem auto', 
+      padding: '2rem', 
+      fontFamily: 'sans-serif', 
+      textAlign: 'center',
+      border: '1px solid #ccc',
+      borderRadius: '8px'
+    }}>
       <h1>{isRegister ? 'Student Registration' : 'Student Login'}</h1>
       <form onSubmit={handleSubmit} noValidate>
         <div>
